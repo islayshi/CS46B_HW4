@@ -1,0 +1,19 @@
+package func;
+
+public class ComplexSquaredNormFunction implements DoubleFunctionOfTwoInts {
+	
+	@Override
+	public double fOfXY(int x, int y) {
+		//return the norm of (x+bi)*(x+bi).
+		double x2 = (Math.pow(x, 2));
+		double y2 = (2 * x * y) - Math.pow(y, 2);
+		
+		return x2 + y2;
+	}
+	
+	@Override
+	public String getName() {
+		return "ComplexSquareNormFunction";
+	}
+
+}

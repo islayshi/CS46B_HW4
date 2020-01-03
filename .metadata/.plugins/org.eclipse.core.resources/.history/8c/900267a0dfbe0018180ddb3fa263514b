@@ -1,0 +1,22 @@
+package func;
+
+public class ComplexNormFunction implements DoubleFunctionOfTwoInts{
+	
+	@Override
+	public double fOfXY(int x, int y)
+	{
+		int x1 = x * x;
+		int y2 = y * y;
+		
+		return x1 + y2;
+		//return Math.pow(x, 2) + Math.pow(y, 2);
+	}
+
+	@Override
+	public String getName() {
+		return "ComplexNormFunction";
+	}
+	
+	
+
+}
